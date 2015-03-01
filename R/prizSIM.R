@@ -33,7 +33,7 @@ prizSIM = function(TOKEN=NA, TID=NA) {
     df = data.frame()
   } else {
     ## parse the data into a nested list
-    dat = content(resp)
+    dat = httr::content(resp)
     ## parse into a dataframe
     df = do.call(rbind, lapply(dat$topics, function(x) data.frame(topic_id = x$id,
                                                                   topic = x$topic,
