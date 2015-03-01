@@ -3,6 +3,7 @@
 #' This function attempts to take a URL and use the API to tag it with topics
 #' @param TOKEN character. Your API token
 #' @param TID integer The id number of the topic you want to find simlarities to.
+#' @return dataframe
 #' @export
 
 

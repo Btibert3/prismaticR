@@ -3,6 +3,7 @@
 #' This function attempts to take a URL and use the API to tag it with topics
 #' @param TOKEN Your API token
 #' @param URL The URL of the page you want to tag for topics. Be sure to include http://
+#' @return dataframe
 #' @export
 
 
