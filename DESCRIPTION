@@ -1,0 +1,11 @@
+Package: prismaticR
+Title: A package to interact with Prismatic's API
+Version: 0.1
+Authors@R: "Brock Tibert <btibert3@gmail.com> [aut, cre]"
+Description: The package interacts with Prismatic's Topic API.
+Depends: R (>= 3.1.0)
+License: MIT
+LazyData: true
+Imports:
+    httr,
+    RCurl
