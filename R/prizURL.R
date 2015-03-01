@@ -7,7 +7,7 @@
 
 
 prizURL = function(TOKEN=NA, URL=NA) {
-  library(httr)
+  suppressMessages(library(httr))
   ## set the endpoint
   EP = "http://interest-graph.getprismatic.com/url/topic"
   ## make sure the token exsists

@@ -7,7 +7,7 @@
 
 
 prizSIM = function(TOKEN=NA, TID=NA) {
-  library(httr)
+  suppressMessages(library(httr))
   ## set the endpoint
   EP = "http://interest-graph.getprismatic.com/topic/topic"
   ## make sure the token exsists
