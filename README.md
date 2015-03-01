@@ -28,14 +28,37 @@ Right now, the package currently has functionality for:
 install.package("devtools")
 devtools::install_github("btibert3/prismaticR")
 library(prismaticR)
+
+## define your token
 TOKEN = "your-token-here"
 
 ## tag a url
 prizURL(TOKEN, "https://en.wikipedia.org/wiki/New_England_Patriots")
 
-## get similar topics
-prizSIM(TOKEN, 1950)
+returns a dataframe ...
+
+  topic_id                topic   score
+1     3087 New England Patriots 0.78413
+2     4269           Super Bowl 0.72410
+3     3085          New England 0.66779
+4     3125      New York Giants 0.62686
+5     4165       St. Louis Rams 0.61037
+6     3165                  NFL 0.60830
+7     1806    Green Bay Packers 0.57642
+
+## get similar topics to Ice Hockey
+prizSIM(TOKEN, 1950) 
+
+also returns a dataframe ...
+
+  topic_id           topic   score
+1     1948          Hockey 0.33074
+2     3166             NHL 0.30033
+3     4163 St. Louis Blues 0.26700
+
 ```
+
+Not sure why only the St. Louis Blues are similar, but the API is currently alpha, so I am sure it will get "better" over time.
 
 ## Notes and Future Development
 
