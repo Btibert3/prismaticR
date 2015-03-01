@@ -11,6 +11,9 @@ prizURL(TOKEN = NA, URL = NA)
 
 \item{URL}{The URL of the page you want to tag for topics. Be sure to include http://}
 }
+\value{
+dataframe
+}
 \description{
 This function attempts to take a URL and use the API to tag it with topics
 }

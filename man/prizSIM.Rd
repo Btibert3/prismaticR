@@ -11,6 +11,9 @@ prizSIM(TOKEN = NA, TID = NA)
 
 \item{TID}{integer The id number of the topic you want to find simlarities to.}
 }
+\value{
+dataframe
+}
 \description{
 This function attempts to take a URL and use the API to tag it with topics
 }
