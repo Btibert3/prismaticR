@@ -19,8 +19,11 @@ Right now, the package currently has functionality for:
 
 1.  `prizURL` = Tag a URL with topics
 2.  `prizSIM` = Identify related topics.
+3.  `prizASP` = Get the Aspects of the URL
 
 `prizSIM` expects a topic ID.  You can find those [here](http://interest-graph.getprismatic.com/topic/all/human)
+
+On March 11, 2015, Prismatic introduced the Aspect Endpoint, which can be [found here](http://blog.getprismatic.com/deeper-content-analysis-with-aspects/).
 
 ## Usage
 
@@ -55,6 +58,42 @@ also returns a dataframe ...
 1     1948          Hockey 0.33074
 2     3166             NHL 0.30033
 3     4163 St. Louis Blues 0.26700
+
+
+## get the aspects of a page
+URL = "https://en.wikipedia.org/wiki/New_England_Patriots"
+x = prizASP(TOKEN, URL)
+x
+
+which returns:
+
+$aspects
+$aspects$type
+$aspects$type$`sub-aspects`
+$aspects$type$`sub-aspects`$content
+$aspects$type$`sub-aspects`$content$score
+[1] 0.23123
+
+$aspects$type$`sub-aspects`$content$value
+[1] "review"
+
+
+
+$aspects$type$score
+[1] 0.58643
+
+$aspects$type$value
+[1] "article"
+
+
+$aspects$flag_nsfw
+$aspects$flag_nsfw$score
+[1] 0.99997
+
+$aspects$flag_nsfw$value
+[1] "false"
+
+
 
 ```
 
