@@ -8,4 +8,5 @@ License: MIT
 LazyData: true
 Imports:
     httr,
-    RCurl
+    RCurl,
+    rvest

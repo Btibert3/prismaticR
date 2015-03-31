@@ -19,9 +19,10 @@ Right now, the package currently has functionality for:
 
 1.  `prizURL` = Tag a URL with topics
 2.  `prizSIM` = Identify related topics.
-3.  `prizASP` = Get the Aspects of the URL
+3.  `prizASP` = Get the Aspects of the URL  
+4.  `prizTID` = Scrape the page to get the current list of topics and their ID  
 
-`prizSIM` expects a topic ID.  You can find those [here](http://interest-graph.getprismatic.com/topic/all/human)
+`prizSIM` expects a topic ID.  You can find those [here](http://interest-graph.getprismatic.com/topic/all/human) or use `prizTID()`.
 
 On March 11, 2015, Prismatic introduced the Aspect Endpoint, which can be [found here](http://blog.getprismatic.com/deeper-content-analysis-with-aspects/).
 
@@ -48,6 +49,9 @@ returns a dataframe ...
 5     4165       St. Louis Rams 0.61037
 6     3165                  NFL 0.60830
 7     1806    Green Bay Packers 0.57642
+
+## get the database of topics and their ids locally
+topic_ids = prizTID()
 
 ## get similar topics to Ice Hockey
 prizSIM(TOKEN, 1950) 
