@@ -21,6 +21,7 @@ Right now, the package currently has functionality for:
 2.  `prizSIM` = Identify related topics.
 3.  `prizASP` = Get the Aspects of the URL  
 4.  `prizTID` = Scrape the page to get the current list of topics and their ID  
+5.  `prizRECENT` = The best recent content for a topic id
 
 `prizSIM` expects a topic ID.  You can find those [here](http://interest-graph.getprismatic.com/topic/all/human) or use `prizTID()`.
 
