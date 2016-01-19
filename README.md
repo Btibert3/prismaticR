@@ -1,9 +1,12 @@
+**UPDATE** Prismatic has shut down, so this package no longer will work.  Read more about it [here](http://venturebeat.com/2015/12/11/prismatic-is-shutting-down-its-news-app-for-ios-android-and-web-on-december-20/)
+
 # About
 
 This is a very basic R package to interface with Prismatic's Topic Graph API.  This is also my first R package, so I am sure that there are many things that can be improved.  To learn more about how to create your own R packages, these are two resources to get your started:
 
 1.  [Writing an R Package by Hillary Parker](http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)
 2.  [Hadley's Book on R Packages](http://r-pkgs.had.co.nz/)
+3.  
 
 ## The API
 
